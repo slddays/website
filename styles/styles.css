@@ -11,6 +11,15 @@ header {
     padding: 20px;
 }
 
+header .logo a {
+    background-image: url("assets/endwalkerlogo.png");
+    background-size: 100px;
+    display: inline-block;    
+    width: 300px;
+    height: 80px;
+    text-indent: -999999px;
+}
+
 section {
     background: white;
     color: gray;
