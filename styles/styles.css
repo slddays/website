@@ -26,16 +26,20 @@ header a {
     text-transform: uppercase;
 }
 
+header .mobile {
+    display: none;
+}
+
 header .logo a {
     background-image: url(/assets/knottedlogo.png);
-    background-size: 200px;
     background-repeat: no-repeat;
+    background-size: 200px;
     display: inline-block;    
-    width: 200px;
     height: 80px;
     position: relative;
     top: -30px;
     text-indent: -999999px;
+    width: 200px;
 }
 
 nav ul {
@@ -50,6 +54,29 @@ nav li {
     margin-right: 20px;
 }
 
+/* RESPONSIVE RULES */
+@media screen and (max-width: 640px) {
+    header {
+        height: 200px;
+        background-position: 0 -70px;
+    }
+
+    header .mobile {
+        display: inline-block;
+    }
+
+    header .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 200px;
+        background-position: 0 -0px;
+    }
+}
+
 /* FEATURES */
 
 .features {
@@ -58,6 +85,7 @@ nav li {
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .features figure {
@@ -72,6 +100,14 @@ nav li {
     box-shadow: rgb(248, 210, 105) 0 0 10px;
     width: 200px;
 }
+
+
+/* RESPONSIVE RULES
+@media screen and (max-width: 640px) {
+    .features {
+        display: block;
+    }
+} */
 
 section {
     background: white;
@@ -102,3 +138,4 @@ footer {
     padding: 10px 20px;
     text-align: center;
 }
+
